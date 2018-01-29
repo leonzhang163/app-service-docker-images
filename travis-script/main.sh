@@ -206,6 +206,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
         echo "INFORMATION - COMMIT MESSAGE contains #sign-off, using PROD......"
         echo "INFORMATION - COMMIT MESSAGE contains #sign-off, using PROD......" >> result.log
         DOCKER_USERNAME=$PROD_DOCKER_USERNAME
+        DOCKER_ACCOUNT=$PROD_DOCKER_ACCOUNT
         DOCKER_PASSWORD=$PROD_DOCKER_PASSWORD
     fi    
     commit_sha=$TRAVIS_COMMIT    
